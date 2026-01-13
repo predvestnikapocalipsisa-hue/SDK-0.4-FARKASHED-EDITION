@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="x:\binaries\ShaderEditor.exe"/>
+    <OBJFILES value="x:\intermediate_ed\se\ShaderEditor.obj 
+      x:\intermediate_ed\se\UI_ShaderTools.obj 
+      x:\intermediate_ed\se\BottomBar.obj 
+      x:\intermediate_ed\se\GameMtlLib_Editor.obj 
+      x:\intermediate_ed\se\LeftBar.obj x:\intermediate_ed\se\main.obj 
+      x:\intermediate_ed\se\Splash.obj x:\intermediate_ed\se\stdafx.obj 
+      x:\intermediate_ed\se\TopBar.obj x:\intermediate_ed\se\UI_ShaderMain.obj 
+      x:\intermediate_ed\se\SHToolsInterface.obj 
+      x:\intermediate_ed\se\SHCompilerTools.obj 
+      x:\intermediate_ed\se\SHCompilerToolsProperties.obj 
+      x:\intermediate_ed\se\SHGameMtlPairTools.obj 
+      x:\intermediate_ed\se\SHGameMtlTools.obj 
+      x:\intermediate_ed\se\SHSoundEnvTools.obj 
+      x:\intermediate_ed\se\SHEngineTools.obj 
+      x:\intermediate_ed\se\SHEngineToolsProperties.obj"/>
+    <RESFILES value="resource.res ShaderEditor.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) BottomBar.dfm LeftBar.dfm main.dfm Splash.dfm TopBar.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="elpackB6.lib editor.lib vclx.lib bcbsmp.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib bcbsmp.lib vclx.lib editor.lib elpackB6.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\Lib\Debug"/>
+    <RELEASELIBPATH value="$(BCB)\Lib\Release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_EDITOR;_SHADER_EDITOR;_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_RTLDLL;USEPACKAGES"/>
+    <MAINSOURCE value="ShaderEditor.cpp"/>
+    <INCLUDEPATH value="$(DXSDK9_DIR);$(COMPONENTS)\AlexMX;$(BCB)\Include;$(BCB)\Include\Vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender;$(EAX_DIR)\Include"/>
+    <LIBPATH value="$(BCB)\Projects;$(BCB)\Lib;$(BCB)\Lib\Obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;x:\libraries"/>
+    <WARNINGS value="-w8092 -w8090 -w8089 -w8087 -wprc -wucp -wstv -wstu -wsig -wpin -w-par 
+      -wnod -wnak -wdef -wcln -wbbf -wasm -wamp -wamb -w-8059"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(DXSDK9_DIR) -I$(COMPONENTS)\AlexMX -I$(BCB)\Include 
+      -I$(BCB)\Include\Vcl -I$(COMPONENTS)\ElPack\Code 
+      -I$(COMPONENTS)\ElPack\Code\Source -I$(CORE_DIR) -I../../xr_3da 
+      -I../../xr_3da/xrRender -I$(EAX_DIR)\Include -src_suffix cpp -D_EDITOR 
+      -D_SHADER_EDITOR -D_DEBUG -no_tie -boa"/>
+    <CFLAG1 value="-Od -H=x:\intermediate_ed\se\pch.csm -Q -Vms -Vx -Ve -xf -xp -VF -ff -X- 
+      -r- -ps -a4 -6 -b- -k -y -v -vi- -He -c -tW -tWM"/>
+    <PFLAGS value="-N2x:\intermediate_ed\se -N0x:\intermediate_ed\se -$Y+ -$W -$R -$Q -$O- 
+      -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-lx:\libraries -Ix:\intermediate_ed\se -D&quot;&quot; -GC-GF:LARGEADDRESSAWARE 
+      -S:0x200000 -aa -Tpe -GD -x -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="ShaderEditor.cpp" FORMNAME="" UNITNAME="ShaderEditor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ShaderEditor.todo" FORMNAME="" UNITNAME="ShaderEditor.todo" CONTAINERID="ToDo" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="UI_ShaderTools.cpp" FORMNAME="" UNITNAME="UI_ShaderTools" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BottomBar.cpp" FORMNAME="fraBottomBar" UNITNAME="BottomBar" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="GameMtlLib_Editor.cpp" FORMNAME="" UNITNAME="GameMtlLib_Editor.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LeftBar.cpp" FORMNAME="fraLeftBar" UNITNAME="LeftBar" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="main.cpp" FORMNAME="frmMain" UNITNAME="main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Splash.cpp" FORMNAME="frmSplash" UNITNAME="Splash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="stdafx.cpp" FORMNAME="" UNITNAME="stdafx.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TopBar.cpp" FORMNAME="fraTopBar" UNITNAME="TopBar" CONTAINERID="CCompiler" DESIGNCLASS="TFrame" LOCALCOMMAND=""/>
+      <FILE FILENAME="UI_ShaderMain.cpp" FORMNAME="" UNITNAME="UI_ShaderMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SHToolsInterface.cpp" FORMNAME="" UNITNAME="SHToolsInterface.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SHCompilerTools.cpp" FORMNAME="" UNITNAME="SHCompilerTools.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SHCompilerToolsProperties.cpp" FORMNAME="" UNITNAME="SHCompilerToolsProperties.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SHGameMtlPairTools.cpp" FORMNAME="" UNITNAME="SHGameMtlPairTools.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SHGameMtlTools.cpp" FORMNAME="" UNITNAME="SHGameMtlTools.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SHSoundEnvTools.cpp" FORMNAME="" UNITNAME="SHSoundEnvTools.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="resource.res" FORMNAME="" UNITNAME="resource.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SHEngineTools.cpp" FORMNAME="" UNITNAME="SHEngineTools.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SHEngineToolsProperties.cpp" FORMNAME="" UNITNAME="SHEngineToolsProperties.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ShaderEditor.res" FORMNAME="" UNITNAME="ShaderEditor.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=2
+Build=119
+Debug=1
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=Tool of SDK Stalker: Shadow of Chernobyl
+FileVersion=1.0.2.119
+InternalName=
+LegalCopyright=GSC Game World
+LegalTrademarks=
+OriginalFilename=ShaderEditor
+ProductName=XRAY SDK
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=$(DXSDK9_DIR);$(COMPONENTS)\AlexMX;$(BCB)\Include;$(BCB)\Include\Vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender;$(EAX_DIR)\Include
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=$(BCB)\Projects;$(BCB)\Lib;$(BCB)\Lib\Obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;x:\libraries
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_EDITOR;_SHADER_EDITOR;_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=x:\intermediate_ed\se
+
+[HistoryLists\hlFinalOutputDir]
+Count=1
+Item0=x:\binaries\
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=x:\libraries
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=x:\binaries\ShaderEditor.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
